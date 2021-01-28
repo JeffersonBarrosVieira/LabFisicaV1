@@ -3,10 +3,14 @@ import Link from 'next/link';
 
 const Inicio = () => {
     return (
-        <div className="pagina-inicial">
-            <header>
-                <h1 className="nome animacao">LabFísica</h1>
+        <div id="navegacao">
+            <header id="menu-geral">
+                <h1 className="nome">LabFísica</h1>
             </header>
+
+            <main id="pagina-navegacao">
+
+            </main>
         </div>
     )
 }

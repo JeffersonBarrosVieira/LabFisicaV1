@@ -1,32 +1,85 @@
-header {
-    position: fixed;
-    top: 0;
-    background-color: #031f3be3;
+#navegacao {
+    font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI, Helvetica Neue,Helvetica,Arial,sans-serif;
+    min-height: 100vh;
     width: 100%;
-    height: 50px;
-    align-items: center;
-    border-bottom: 2px solid #000000ce;
     flex: 1;
     display: flex;
-    flex-direction: row;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: top center;
 
-    opacity: 0;
+    animation: fadeIn 2.0s 0s ease-out forwards;
 
-    animation: fadeIn 2.0s 0.5s ease-out forwards;
+    #menu-geral {
+        position: fixed;
+        top: 0;
+        left: -25%;
+        background-image:  linear-gradient(45deg, #005c8b, #175a14c4  60%);
+        width: 30%;
+        height: 100%;
+        align-items: center;
+        border-right: 2px solid #a3a2a2ce;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+
+        animation: fecharMenu 4s 0s ease-out forwards;
+
+        transition: left 0.8s ease-in-out;
+
+        &:hover,
+        &:active,
+        &:focus {
+            left: 0;
+        }
+    }
+
+    .nome {
+        padding: 0 20px;
+        line-height: 0.9em;
+        text-align: center;
+        color:  #d4d4d4;
+        font-size: 24px;
+        font-weight: 100;
+        font-family: cursive;
+        
+        letter-spacing: 1px;
+    
+        opacity: 0;
+    
+        animation: entrada 1s 1s ease-out forwards;
+    }
 }
 
-header .nome {
-    padding: 0 20px;
-    line-height: 0.9em;
+#pagina-navegacao{
+    font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI, Helvetica Neue,Helvetica,Arial,sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    color:  #d4d4d4;
-    font-size: 20px;
-    font-weight: 100;
-    font-family: cursive;
-    
-    letter-spacing: -1px;
+    position: top center;
 
-    opacity: 0;
+    &::after{
+        background-image: linear-gradient(to top, #3b281741, #0000008f 60%), url('/img/fundo-inicial.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: "";
+        min-height: 100vh;
+        
+        pointer-events: none;
+        position: top center;
+        width: 105%;
+        z-index: -1;
 
-    animation: entrada 1s 2s ease-out forwards;
+        animation: mexerFundo 13s ease-in-out infinite alternate;
+    }
 }
