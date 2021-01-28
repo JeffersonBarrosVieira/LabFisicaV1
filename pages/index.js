@@ -19,7 +19,7 @@ const Home = () => {
                 </h2>
             </div>
 
-            <code className="versao">Versão 1.2</code>
+            <code className="versao">Versão 1.3</code>
 
             <p className="caixa-entrar">
                 <Link href="/navegacao">
