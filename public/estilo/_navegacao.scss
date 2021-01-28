@@ -1,0 +1,32 @@
+header {
+    position: fixed;
+    top: 0;
+    background-color: #031f3be3;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    border-bottom: 2px solid #000000ce;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+
+    opacity: 0;
+
+    animation: fadeIn 2.0s 0.5s ease-out forwards;
+}
+
+header .nome {
+    padding: 0 20px;
+    line-height: 0.9em;
+    text-align: center;
+    color:  #d4d4d4;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: cursive;
+    
+    letter-spacing: -1px;
+
+    opacity: 0;
+
+    animation: entrada 1s 2s ease-out forwards;
+}

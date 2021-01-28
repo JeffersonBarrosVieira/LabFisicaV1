@@ -1,7 +1,6 @@
 import Router from 'next/router';
 import Head from 'next/head';
-import Link from 'next/link';
-import '../styles/globals.css';
+import '../styles/globals.scss';
 import NProgress from 'nprogress';
 
 Router.events.on("routeChangeStart", (url) => {
@@ -16,8 +15,7 @@ Router.events.on("routeChangeStart", (url) => {
       <>
         <Component {...pageProps} />
         <Head>
-          <link rel="stylesheet" type="text/css" href="/nprogress.css" />
-          <link rel="stylesheet" type="text/css" href="/styles.css" />
+          <title>LabFísica</title>
         </Head>
       </>
       )

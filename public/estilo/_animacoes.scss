@@ -1,0 +1,64 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes entrada {
+    0% {
+        opacity: 0;
+        transform: translateX(100vw);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes queda {
+    0% {
+        opacity: 1;
+        transform: translateY(calc(-100vh /4));
+    }
+
+    60%{
+        opacity: 1;
+        transform: translate(0);
+    }
+
+    80% {
+        transform: translateY(calc(-100vh /40));
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateX(-50vw);
+    }
+
+    80%{
+        transform: translateX(20vw);
+    }
+
+    90% {
+        transform: translateX(-5vw);
+    }
+
+    95% {
+        transform: translateX(1.25vw);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
