@@ -19,7 +19,11 @@ const Home = () => {
                 </h2>
             </div>
 
-            <code className="versao">Versão 1.3</code>
+            <div className="caixa-versao">
+                <img className="mola" src="/img/mola.png"/>
+                <img className="ima" src="/img/ima.png"/>
+                <code className="versao">Versão 1.3</code>
+            </div>
 
             <p className="caixa-entrar">
                 <Link href="/navegacao">
