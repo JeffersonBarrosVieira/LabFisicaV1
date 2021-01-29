@@ -19,19 +19,17 @@ const Home = () => {
                 </h2>
             </div>
 
-            <div className="caixa-versao">
-                <img className="mola" src="/img/mola.png"/>
-                <img className="ima" src="/img/ima.png"/>
-                <code className="versao">Versão 1.3</code>
-            </div>
+            <img className="mola" src="/img/mola.png"/>
+            <img className="ima" src="/img/ima.png"/>
+            <code className="versao">Versão 1.3</code>
 
-            <p className="caixa-entrar">
-                <Link href="/navegacao">
-                    <a className="entrar">
-                        ENTRAR
-                    </a>
-                </Link>
-            </p>
+           
+            <Link href="/navegacao">
+                <a className="entrar">
+                    ENTRAR
+                </a>
+            </Link>
+            
         </main>
     )
 }

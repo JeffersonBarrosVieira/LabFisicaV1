@@ -106,22 +106,22 @@
 
     88%{
         opacity: 1;
-        width: 185px;
+        width: 14vw;
     }
 
     90% {
         opacity: 1;
-        width: calc(185px - 5vw);
+        width: calc(14vw - 5vw);
     }
 
     95% {
         opacity: 1;
-        width: calc(185px + 1.25vw);
+        width: calc(14vw + 1.25vw);
     }
 
     100%{
         opacity: 1;
-        width: 185px;
+        width: 14vw;
     }
 }
 
