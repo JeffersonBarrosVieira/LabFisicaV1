@@ -1,7 +1,4 @@
-import React from 'react';
 import Link from 'next/link';
-// import { Router } from 'react-router';
-
 
 const TelaInicial = () => {
     return(
@@ -31,10 +28,13 @@ const TelaInicial = () => {
                     ENTRAR
                 </a>
             </Link>
+            
+            {/* <Router>
+                <Route path="/teste" exact render={( props ) => ( <div><h1>TESTANDO</h1></div> )} />
+            </Router> */}
 
         </main>
     )
-
 }
 
 export default TelaInicial

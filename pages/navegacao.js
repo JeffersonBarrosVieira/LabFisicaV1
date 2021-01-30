@@ -1,18 +1,20 @@
-import Head from 'next/head';
 import Link from 'next/link';
+import React from 'react';
 
-const Inicio = () => {
+import Layout from './layouts/layout';
+// import Sobre from './opcoes/sobre';
+// import Objetivo from  './opcoes/objetivo';
+// import Topicos from './opcoes/topicos';
+
+
+const Navegacao = () => {
     return (
-        <div id="navegacao">
-            <header id="menu-geral">
-                <h1 className="nome">LabFísica</h1>
-            </header>
-
-            <main id="pagina-navegacao">
-
-            </main>
-        </div>
+        <>
+            <Layout>
+                
+            </Layout>
+        </>
     )
 }
 
-export default Inicio
+export default Navegacao

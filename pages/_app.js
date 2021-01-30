@@ -1,4 +1,5 @@
 import Router from 'next/router';
+import React from 'react';
 import Head from 'next/head';
 import '../styles/globals.scss';
 import NProgress from 'nprogress';
@@ -11,6 +12,7 @@ Router.events.on("routeChangeStart", (url) => {
   Router.events.on("routeChangeError", () => NProgress.done());
   
   function App({ Component, pageProps }) {
+
     return (
       <>
         <Component {...pageProps} />

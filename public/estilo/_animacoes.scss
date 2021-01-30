@@ -7,17 +7,6 @@
     }
 }
 
-@keyframes entrada {
-    0% {
-        opacity: 0;
-        transform: translateY(100vw);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 @keyframes queda {
     0% {
         opacity: 1;
@@ -159,5 +148,49 @@
 
     100%{
         transform: translateX(0);
+    }
+}
+
+@keyframes entrada {
+    0% {
+
+        opacity: 0;
+        transform: translateY(100vh);
+        border-bottom: 0.3vh solid #a3a2a200;
+    }
+    60%{
+        background-color: #c9c9c900;
+        transform: translateY(0);
+        color:  #c9c9c9;
+        border-bottom: 0.3vh solid #a3a2a200;
+    }
+    100% {
+        background-color: #d8d8d8;
+        color:  #1f1919;
+        opacity: 1;
+        border-bottom: 0.3vh solid #a3a2a2ce;
+        
+    }
+}
+
+@keyframes entrada-individual {
+    0% {
+
+        opacity: 0;
+        transform: translateY(100vh);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes aumentar{
+    0%{
+        font-weight: 50;
+    }
+    100%{
+        font-weight: 100;
     }
 }
