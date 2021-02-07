@@ -1,29 +1,38 @@
 import React, {useEffect} from 'react';
 
-const Vpython = () => {
-    function teste () {
+const Cubo = () => {
+    function inserirCubo () {
         useEffect( function mount() {
             window.__context = { glowscript_container: $("#glowscript").removeAttr("id") }
 
             async function __main__() { // async wrapper permits use of await outside your own functions
-
+            
             var vector = vec // optional: makes vector a synonym of the fundamental vec
-            let scene = canvas()
+            let scene = canvas({title: '<h1>Cubo</h1>',width:400, height:300, autoscale:0, range:3,
+            center:vec(0,0,0), forward:vec(-0.3,0,-5), background:vec(0,0,0)})
             let b = box({color:color.cyan})
             
             async function f(obj) { // needs async because f() contains an await
-                let t = clock()
+                let t = 0
+                let dt = 0.01
                 
+
                 while (true) {
                     await rate(100)
+
+                    t += dt
+                    // console.log(t)
                     obj.rotate({angle:0.01, axis:vec(0,1,0)})
-                    if (clock()-t > 3) break
+                    if (t > 3) break
+                    
                 }
-                return 25
+                return 0
             }
-        
-            let x = await f(b) // needs await (inside async __main__) because f() contains an await
+            
+            
             print(x)
+            let x = await f(b) // needs await (inside async __main__) because f() contains an await
+            
             } // end of __main__ wrapper
             __main__()
 
@@ -33,13 +42,13 @@ const Vpython = () => {
 
     return(
         <>
-        <div id="glowscript" className="glowscript">
+        <div id="glowscript" style={{width: "100vw"}} className="glowscript">
             <script type="text/javascript">
-             {teste()}
+             {inserirCubo()}
             </script>
         </div>
         </>
     )
 }
 
-export default Vpython
+export default Cubo
