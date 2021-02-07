@@ -30,8 +30,8 @@ const Layout = () => {
                     {MostrarConteudo1}
                 </div>
 
-                <a href="https://jeffersonbarros.vercel.app" target="_blank" style={{color: 'rgb(50, 50, 230)', textAlign: 'center', fontSize: '20px'}}>
-                    Sobre Min
+                <a id="rodape" href="https://jeffersonbarros.vercel.app" target="_blank" >
+                    Sobre Mim
                 </a>
 
             </header>

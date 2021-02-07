@@ -3,8 +3,10 @@
     min-height: 100vh;
     width: 100%;
 
-    background-color: #140f0f;
+    background-image: linear-gradient(45deg, #be3a3a59, #ce862279 60%), url('../img/estrelas.jpg');
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
     background-size: cover;
     
     flex: 1;
@@ -19,14 +21,14 @@
 }
 
 #menu-geral {
-    padding: 2vh 0.5vw;
+    padding: 0.5vh 0.5vw;
     position: fixed;
     top: 0;
     left: 0;
 //     // z-index: 1;
-    background-color: #1f1919;
-    width: 30vw;
-    height: 100%;
+    background-color: #1f1919ab;
+    width: 40vw;
+    min-height: 100vh;
     text-align: left;
     border-right: 0.15vw solid #a3a2a2ce;
     flex: 1;
@@ -39,7 +41,7 @@
 
     .opcoes{
         margin: 0;
-        padding: 0 0 2vh 0;
+        padding: 0 0 0.5vh 0;
         // text-align: center;
         display: flex;
         flex-direction: row;
@@ -52,6 +54,8 @@
         padding: calc((0.6vw + 1.2vh)/2);
         font-size: calc((1.5vw + 3vh)/2);
         font-weight: 50;
+
+        background-image: linear-gradient( 45deg, #be3ab759, #ce8622a9 60%) ;
         
         text-decoration: none;
         border: calc((0.2vh + 0.1vw)/2) solid #c9c9c9;
@@ -60,15 +64,17 @@
         opacity: 0;
         animation: entrada-individual 1s 2.4s ease-out forwards;
         
-        transition: color 0.5s ease-in-out,
-        border 0.5s ease-in-out,
-        font-size 0.5s ease-in-out,
-        padding 0.5 ease-in-out;
+        transition: color 0.2s ease-in-out,
+                    border 0.2s ease-in-out,
+                    font-size 0.2s ease-in-out,
+                    padding 0.2s ease-in-out;
 
 
         &:hover,
+        &:active,
         &:focus {
-            color:#fff;
+            text-decoration: none;
+            color:#000000;
             border: calc((0.3vh + 0.15vw)/2) solid #fff;
             font-size: calc((1.7vw + 3.4vh)/2);
             padding: calc((0.6vw + 1.2vh)/2);
@@ -80,6 +86,9 @@
         padding: calc((0.6vw + 1.2vh)/2);
         font-size: calc((1.5vw + 3vh)/2);
         font-weight: 50;
+
+        background-image: linear-gradient( 45deg, #be3ab759, #ce8622a9 60%) ;
+
         text-decoration: none;
         border: calc((0.2vh + 0.1vw)/2) solid #c9c9c9;
         border-radius: calc((1.8vh + 0.9vw)/2);
@@ -87,15 +96,15 @@
         opacity: 0;
         animation: entrada-individual 1s 2.6s ease-out forwards;
         
-        transition: color 0.5s ease-in-out,
-        border 0.5s ease-in-out,
-        font-size 0.5s ease-in-out,
-        padding 0.5 ease-in-out;
+        transition: color 0.2s ease-in-out,
+                    border 0.2s ease-in-out,
+                    font-size 0.2s ease-in-out,
+                    padding 0.2s ease-in-out;
 
 
         &:hover,
         &:focus {
-            color:#fff;
+            color:#000000;
             border: calc((0.3vh + 0.15vw)/2) solid #fff;
             font-size: calc((1.7vw + 3.4vh)/2);
             padding: calc((0.6vw + 1.2vh)/2);
@@ -108,6 +117,9 @@
         font-size: calc((1.5vw + 3vh)/2);
         font-weight: 50;
         
+        background-image: linear-gradient( 45deg, #be3ab759, #ce8622a9 60%) ;
+
+
         text-decoration: none;
         border: calc((0.2vh + 0.1vw)/2) solid #c9c9c9;
         border-radius: calc((1.8vh + 0.9vw)/2);
@@ -115,15 +127,15 @@
         opacity: 0;
         animation: entrada-individual 1s 2.8s ease-out forwards;
     
-        transition: color 0.5s ease-in-out,
-                    border 0.5s ease-in-out,
-                    font-size 0.5s ease-in-out,
-                    padding 0.5 ease-in-out;
+        transition: color 0.2s ease-in-out,
+                    border 0.2s ease-in-out,
+                    font-size 0.2s ease-in-out,
+                    padding 0.2s ease-in-out;
     
 
         &:hover,
         &:focus {
-            color:#fff;
+            color:#000000;
             border: calc((0.3vh + 0.15vw)/2) solid #fff;
             font-size: calc((1.7vw + 3.4vh)/2);
             padding: calc((0.6vw + 1.2vh)/2);
@@ -132,7 +144,7 @@
 
     .opcoes-conteudo{
         margin: 0;
-        padding: 2vh;
+        padding: calc((1vh + 0.5vw)/2);
         border-top: 0.15vw solid #a3a2a2ce;
         flex: 1;
         display: flex;
@@ -160,10 +172,12 @@
     right: 0;
 //     z-index: -1;
 
+    background-color: #1f191969;
+
     font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI, Helvetica Neue,Helvetica,Arial,sans-serif;
     
     min-height: 100vh;
-    width: 70vw;
+    width: 60vw;
 
     .titulo {
         line-height: 0.9em;
@@ -198,3 +212,25 @@
     }
 
 }
+
+#rodape{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40vw;
+    background-color: #c9c9c9;
+    color: #a15e38a6;
+
+    line-height: 0.9em;
+    margin:0;
+    border-top: 2px solid #868686;
+    padding: 1vh;
+    text-align: center;
+    font-size: calc((1.5vw + 3vh)/2);
+    font-weight: 100;
+    font-family: cursive;
+    
+    letter-spacing: 1px;
+}
+
+@import './sobre';
