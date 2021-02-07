@@ -11,10 +11,53 @@ const Topicos = () => {
     let topico = [Dinamica(), Gravitacao(), Oscilacao()];
     // const[MostrarTopico, AlterarTopico] = useState("");
 
+    function canvasDinamica(){
+        var cnv = document.getElementById("dinamica");
+        var ctx = cnv.getContext("2d");
+        if(cnv.getContext){
+            var ctx = cnv.getContext("2d");
+            
+            alert(ctx);
+            console.log(ctx);
+        }
+    }
+
+    function canvasGravitacao(){
+        var cnv = document.getElementById("gravitacao");
+        var ctx = cnv.getContext("2d");
+        if(cnv.getContext){
+            var ctx = cnv.getContext("2d");
+            
+            alert("teste");
+            console.log(ctx);
+        }
+    }
+
+    function canvasOscilacao(){
+        var cnv = document.getElementById("oscilacao");
+        var ctx = cnv.getContext("2d");
+        if(cnv.getContext){
+            var ctx = cnv.getContext("2d");
+            
+            alert(ctx);
+            console.log(ctx);
+        }
+    }
 
     function inserirTopico(conteudo){
         var div = document.getElementById("conteudo-fisica");
         div.innerHTML = conteudo;
+
+        if(conteudo == topico[0]){
+            canvasDinamica();
+        }
+        if(conteudo == topico[1]){
+            canvasGravitacao();
+        }
+        if(conteudo == topico[2]){
+            canvasOscilacao();
+        }
+       
     }
 
     return(

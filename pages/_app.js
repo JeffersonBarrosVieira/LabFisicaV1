@@ -17,6 +17,12 @@ Router.events.on("routeChangeStart", (url) => {
       <>
         <Component {...pageProps} />
         <Head>
+          <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+          <link type="text/css" href="https://s3.amazonaws.com/glowscript/css/redmond/2.1/jquery-ui.custom.css" rel="stylesheet" />
+          <link type="text/css" href="https://s3.amazonaws.com/glowscript/css/ide.css" rel="stylesheet" />
+          <script type="text/javascript" src="https://s3.amazonaws.com/glowscript/lib/jquery/2.1/jquery.min.js"></script>
+          <script type="text/javascript" src="https://s3.amazonaws.com/glowscript/lib/jquery/2.1/jquery-ui.custom.min.js"></script>
+          <script type="text/javascript" src="https://s3.amazonaws.com/glowscript/package/glow.3.0.min.js"></script>
           <title>LabFísica</title>
         </Head>
       </>
