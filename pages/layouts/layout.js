@@ -8,21 +8,38 @@ import Topicos from './topicos';
 const Layout = () => {
     let conteudo = [<Sobre/>, <Objetivo/>, <Topicos/>];
     const[MostrarConteudo1, AlterarConteudo1] = useState("");
+    const[MostrarConteudo2, AlterarConteudo2] = useState("");
 
+    function inserirSobre(){
+        AlterarConteudo1(conteudo[0]);
+        AlterarConteudo2("");
+    }
+
+    function inserirObjetivo(){
+        AlterarConteudo1(conteudo[1]);
+        AlterarConteudo2("");
+    }
+
+    function mudarCondicao(){
+        AlterarConteudo2(conteudo[2]);
+    }
+    
     return (
         <div id="navegacao">
             <header id="menu-geral">
                 <div className="opcoes">
 
-                    <button className="sobre" onClick={ () => AlterarConteudo1(conteudo[0])}>
+                    <button className="sobre" onClick={ () => inserirSobre()}>
                         Sobre
                     </button>
-                    <button className="objetivo" onClick={ () => AlterarConteudo1(conteudo[1])}>
+                    <button className="objetivo" onClick={ () => inserirObjetivo()}>
                         Objetivo
                     </button>
-                    <button className="topicos" onClick={ () => AlterarConteudo1(conteudo[2])}>
+                    <a >
+                    <button className="topicos" onClick={ () => mudarCondicao()}>
                         Tópicos
                     </button>
+                    </a>
                     
                 </div>
 
@@ -40,10 +57,9 @@ const Layout = () => {
 
                 <h1 className="titulo">Laboratório de Física Online</h1>
                 
-                <div className="conteudo-dinamico">
-                    Conteudo:
+                <div id="conteudo-dinamico">
                     <div id="conteudo-fisica">
-
+                        {MostrarConteudo2}
                     </div>
                 </div>
 

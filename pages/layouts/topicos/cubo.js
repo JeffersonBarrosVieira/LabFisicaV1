@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect} from  'react';
 
 const Cubo = () => {
     function inserirCubo () {
@@ -9,7 +9,7 @@ const Cubo = () => {
             
             var vector = vec // optional: makes vector a synonym of the fundamental vec
             let scene = canvas({title: '<h1>Cubo</h1>',width:500, height:800, autoscale:0, range:2,
-            center:vec(0,0,0), forward:vec(-0.3,0,-5), background:vec(0,0,0)})
+            center:vec(0,0,0), forward:vec(-0.3,0,-5), background:vec(0.2,0.2,0.2)})
             let b = box({color:color.cyan})
             
             async function f(obj) { // needs async because f() contains an await
@@ -41,13 +41,11 @@ const Cubo = () => {
     }
 
     return(
-        <>
-        <div id="glowscript" className="glowscript">
+        <div id="glowscript" style={{width: "60vw"}} className="glowscript">
             <script type="text/javascript">
-             ${inserirCubo()}
+                {inserirCubo()}
             </script>
         </div>
-        </>
     )
 }
 

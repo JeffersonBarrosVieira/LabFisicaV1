@@ -9,9 +9,8 @@
     background-position: bottom;
     background-size: cover;
     
-    flex: 1;
-    display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: right;
 
     position: top center;
     // z-index: -1;
@@ -22,6 +21,7 @@
 
 #menu-geral {
     padding: 0.5vh 0.5vw;
+    padding-top: calc(((1.5vw + 3vh)/2) + 3vh ); 
     position: fixed;
     top: 0;
     left: 0;
@@ -162,14 +162,13 @@
 
 #pagina-navegacao{
     // background-color: aqua;
-    flex: 1;
     display: flex;
     padding: 0;
+    margin-left: 40vw;
     flex-direction: column;
     text-align: center;
-    position: fixed;
-    top: 0;
-    right: 0;
+    justify-content: center;
+    align-items: center;
 //     z-index: -1;
 
     background-color: #1f191969;
@@ -182,27 +181,34 @@
     .titulo {
         line-height: 0.9em;
         margin:0;
-        padding: 1vh;
+        padding: 1vh 0;
+        width: 100%;
         text-align: center;
         color:  #c9c9c9;
         font-size: calc((1.5vw + 3vh)/2);
         font-weight: 100;
         font-family: cursive;
+        position:fixed;
+        top: 0;
+        right: 0;
         
-        letter-spacing: 1px;
-    
+        // letter-spacing: 1px;
+        z-index: 90;
         opacity: 0;
     
         animation: entrada 2s 1s ease-out forwards;
     }
 
-    .conteudo-dinamico{
+    #conteudo-dinamico{
+        padding-top: calc(((1.5vw + 3vh)/2) + 5vh ); 
+        width: 60vw;
+        height: 40vh;
+        
         color:#c9c9c9;
         align-items: center;
-        justify-content: center;
+        justify-content: baseline;
         flex: 1;
         display: flex;
-        padding: 0;
         flex-direction: column;
         text-align: center;
 
@@ -233,7 +239,7 @@
     letter-spacing: 1px;
     opacity: 0;
 
-    animation: fadeIn 1s 4.1s ease-in-out forwards;
+    animation: rodape 1s 4.1s ease-in-out forwards;
 }
 
 @import './sobre';
