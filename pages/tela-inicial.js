@@ -20,7 +20,7 @@ const TelaInicial = () => {
 
             <img className="mola" src="/img/mola.png"/>
             <img className="ima" src="/img/ima.png"/>
-            <code className="versao">Versão 1.3</code>
+            <code className="versao">Versão 2.3</code>
 
            
             <Link href="/navegacao">
