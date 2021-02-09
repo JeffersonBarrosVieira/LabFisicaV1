@@ -57,16 +57,15 @@ const Cubo = () => {
             e dar zoom!!! :0 Muito legal né?! ^^ Então... vamos lá?
             <br/><br/>
             Caso esteja utilizando celular:<br/>
-            -Use um dedo: arrastando ele sobre a região cinza para rotacionar o objeto;<br/> 
-            -Utilize os dois dedos para dar Zoom: aproximando ambos os dedos ou afastando
+            -Rotacionar: Use um dedo: arrastando ele sobre a região cinza para rotacionar o objeto;<br/> 
+            -Zoom: Utilize os dois dedos para dar Zoom: aproximando ambos os dedos ou afastando
             eles entre si sobre a região cinza.
             <br/><br/>
             Caso esteja no computador:<br/>
-            -Segure o botão esquerdo na região cinza, e arraste sobre a região cinza para
+            -Rotacionar: Segure o botão esquerdo na região cinza, e arraste sobre a região cinza para
             rotacionar o objeto ou segure a tecla Crtl e pressione o botão esquerdo do mouse
             arrastando sobre a região cinza;<br/>
-            -Segure o botão direito sobre a região cinza e arraste para cima aumentando o Zoom
-            ou para baixo diminuindo o Zoom ou rotacione sobre a região cinza o botão Scroll do
+            -Zoom: Gire sobre a região cinza o botão Scroll do
             mouse (uma bolinha que gira).<br/><br/>
 
 
