@@ -7,7 +7,7 @@ import Topicos from './topicos';
 
 const Layout = () => {
     let conteudo = [<Sobre/>, <Objetivo/>, <Topicos/>];
-    const[MostrarConteudo1, AlterarConteudo1] = useState("");
+    const[MostrarConteudo1, AlterarConteudo1] = useState(conteudo[0]);
     const[MostrarConteudo2, AlterarConteudo2] = useState("");
 
     function inserirSobre(){

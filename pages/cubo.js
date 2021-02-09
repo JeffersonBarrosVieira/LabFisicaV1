@@ -44,9 +44,14 @@ const Cubo = () => {
         <>
         <div id="glowscript" className="glowscript">
             <script type="text/javascript">
-             ${inserirCubo()}
+             {inserirCubo()}
             </script>
         </div>
+        {/* <pre lang="latex">E=mc^2 =</pre>
+        <pre lang="latex">{`\\frac{x}{y} \\`}</pre> */}
+
+        <p>{`Dividing $x^2+1$ by $y^2$ gives \[ $\\frac{x^2}{x}$ \]`}</p>
+        <p>{`The british pound is worth 1.5 US\\$ or $1.1 \\euro$`}</p>
         </>
     )
 }

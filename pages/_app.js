@@ -23,6 +23,10 @@ Router.events.on("routeChangeStart", (url) => {
           <script type="text/javascript" src="https://s3.amazonaws.com/glowscript/lib/jquery/2.1/jquery.min.js"></script>
           <script type="text/javascript" src="https://s3.amazonaws.com/glowscript/lib/jquery/2.1/jquery-ui.custom.min.js"></script>
           <script type="text/javascript" src="https://s3.amazonaws.com/glowscript/package/glow.3.0.min.js"></script>
+          <script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
+          <script type="text/javascript">
+            LatexIT.add('p',true)
+          </script>
           <title>LabFísica</title>
         </Head>
       </>

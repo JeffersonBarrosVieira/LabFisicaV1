@@ -1,9 +1,12 @@
-#sobre{
+#sobre-problema{
 
     .titulo{
         margin: 0;
         font-size: calc((1.5vw + 3vh)/2);
         line-height: calc((1.5vw + 3vh)/2);
+
+        opacity: 0;
+        animation: fadeIn 1s 0s ease-in-out forwards;
     }
     .descricao{
         padding: calc((0.5vw + 1vh)/2);
@@ -15,5 +18,34 @@
 
         border: calc((0.2vh + 0.1vw)/2) solid #c9c9c9;
         border-radius: calc((1.8vh + 0.9vw)/2);
+
+        opacity: 0;
+        animation: fadeIn 1s 0.2s ease-in-out forwards;
+    }
+}
+
+#sobre-projeto{
+
+    .titulo{
+        margin: 0;
+        font-size: calc((1.5vw + 3vh)/2);
+        line-height: calc((1.5vw + 3vh)/2);
+
+        opacity: 0;
+        animation: fadeIn 1s 0.5s ease-in-out forwards;
+    }
+    .descricao{
+        padding: calc((0.5vw + 1vh)/2);
+        margin: calc((0.5vw + 1vh)/2) 0;
+        font-size: calc((1.2vw + 2.4vh)/2);
+        line-height: calc((1.4vw + 2.8vh)/2);
+        font-weight: 100;
+        text-align: justify;
+
+        border: calc((0.2vh + 0.1vw)/2) solid #c9c9c9;
+        border-radius: calc((1.8vh + 0.9vw)/2);
+
+        opacity: 0;
+        animation: fadeIn 1s 0.7s ease-in-out forwards;
     }
 }

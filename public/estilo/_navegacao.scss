@@ -34,6 +34,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
+    z-index: 85;
 
     
     color: #c9c9c9;
@@ -154,7 +155,7 @@
 
         opacity: 0;
 
-        animation: fadeIn 1s 3.5s ease-out forwards;
+        animation: fadeIn 1s 4.1s ease-out forwards;
     }
     
 }
@@ -211,6 +212,7 @@
         display: flex;
         flex-direction: column;
         text-align: center;
+        
 
         opacity: 0;
 
@@ -220,26 +222,29 @@
 }
 
 #rodape{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 40vw;
+    position: fixed;
+    right: 0;
+    top: calc((1.5vw + 3vh)/2 + 1vh);
     background-color: #c9c9c9;
     color: #a15e38a6;
+    
 
     line-height: 0.9em;
     margin:0;
-    border-top: 2px solid #868686;
+    border: 2px solid #868686;
+    border-radius: calc((1.3vw + 2.6vh)/4);
     padding: 1vh;
     text-align: center;
-    font-size: calc((1.5vw + 3vh)/2);
+    line-height: calc((1.4vw + 2.8vh)/2);
+    font-size: calc((1.3vw + 2.6vh)/2);
     font-weight: 100;
     font-family: cursive;
     
     letter-spacing: 1px;
     opacity: 0;
+    z-index: 92;
 
-    animation: rodape 1s 4.1s ease-in-out forwards;
+    animation: rodape 1s 4.5s ease-in-out forwards;
 }
 
 @import './sobre';

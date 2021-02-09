@@ -10,9 +10,11 @@ const Topicos = () => {
 
     return(
         <div>
-            <button onClick={ () => AlterarTopico(topico[0])}>
-                Cubo
-            </button>
+            <div className="caixa-btn">
+                <button className="btn-topicos" onClick={ () => AlterarTopico(topico[0])}>
+                    Vamos começar!
+                </button>
+            </div>
             {InserirTopico}
         </div>
     )

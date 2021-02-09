@@ -3,7 +3,7 @@ import React from  'react';
 const Sobre = () => {
     return(
         <>
-        <div id="sobre">
+        <div id="sobre-problema">
             <h1 className="titulo">O Problema</h1>
             <p className="descricao">
             Estimular o interesse às aulas de física não é uma tarefa trivial.
@@ -18,7 +18,7 @@ const Sobre = () => {
 
         </div>
 
-        <div id="sobre">
+        <div id="sobre-projeto">
 
             <h1 className="titulo">O Projeto</h1>
             <p className="descricao">
